@@ -1,0 +1,318 @@
+﻿
+.nav-menu {
+    position: absolute;
+    width: 230px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #0d71af;
+    z-index: 2;
+    font-size: 13px;
+}
+
+.logo-mshop {
+    width: 230px;
+    height: 55px;
+    background-color: #0d71af;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    line-height: 55px;
+}
+
+    .logo-mshop .img-logo {
+        width: 40px;
+        height: 40px;
+        background: url('../Contents/icons/iconMenu.png') no-repeat;
+        background-position: 0px -410px;
+        margin-left: 15px;
+        margin-top: 8px;
+    }
+
+    .logo-mshop .link-text{
+        font-size: 27px;
+        font-weight: 600;
+        color: #fff;
+    }
+
+
+/*menu-inner*/
+.nav-menu .left-menu-inner {
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 55px);
+}
+
+/*center-menu layout*/
+.left-menu-inner .center-content-menu {
+    /*height: 650px;*/
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/*menu parent item*/
+.nav-menu a.parent {
+    position: relative;
+    display: inline-block;
+    width: 230px;
+    height: 40px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer !important;
+}
+
+
+/*thêm logo cho từng mục*/
+.nav-menu a.parent .img {
+    position: absolute;
+    height: 38px;
+    width: 25px;
+    text-align: center;
+    left: 13px;
+    top: 2px;
+    background: url('../Contents/icons/iconMenu.png') no-repeat;
+}
+
+a.menu-active {
+    background-color: #07f !important;
+}
+
+.nav-menu a.parent:hover {
+    background-color: #07f;
+    color: #fff;
+}
+
+/*logo home*/
+.center-content-menu a.parent .iconcls-home {
+    background-position: 0px 4px;
+}
+
+/*logo report*/
+.center-content-menu a.parent .iconcls-report {
+    background-position: 2px -186px;
+}
+
+/*logo deliveryledger*/
+.center-content-menu a.parent .iconcls-deliveryledger {
+    background: url('../../Contents/images/ic_sogiaohang.png') no-repeat 4px 9px;
+}
+
+/*logo purchares*/
+.center-content-menu a.parent .iconcls-buy {
+    background-position: 0px -370px;
+}
+
+/*logo stock*/
+.center-content-menu a.parent .iconcls-stock {
+    background-position: 0 -33px;
+}
+
+/*logo cash*/
+.center-content-menu a.parent .iconcls-cash {
+    background-position: 0 -73px;
+}
+
+/*logo deposit */
+.center-content-menu a.parent .iconcls-deposit {
+    background: url('../Contents/icons/icon-deposit.png')no-repeat center;
+}
+
+/*logo payment-receipt*/
+.center-content-menu a.parent .iconcls-payment-receipt {
+    background: url('../Contents/icons/icon-cost.png') no-repeat center;
+}
+
+/*logo promotion*/
+.center-content-menu a.parent .iconcls-promotion {
+    background-position: 0 -113px;
+}
+
+/*logo menu*/
+.center-content-menu a.parent .iconcls-menu {
+    background: url('../Contents/icons/vector-smart-object.png') no-repeat center;
+}
+
+/*logo dictionary*/
+.center-content-menu a.parent .iconcls-dictionary {
+    background-position: 0 -151px;
+}
+
+/*logo huy hoa don*/
+.center-content-menu a.parent .iconcls-cancel {
+    background: url('../Contents/icons/cancel-invoice.png') no-repeat center;
+}
+
+/*logo sms-marketing */
+.center-content-menu a.parent .iconcls-sms-marketing {
+    background: url('../Contents/icons/SMS_Menu.svg') no-repeat center;
+}
+
+/*logo partner */
+.center-content-menu a.parent .iconcls-partner {
+    background: url('../Contents/icons/ic_GH.svg') no-repeat center;
+}
+/*logo meinvoice*/
+.center-content-menu a.parent .iconcls-meinvoice {
+    background: url('../Contents/icons/ic_hoadon.png') no-repeat center;
+}
+
+/*logo settings*/
+.center-content-menu a.parent .iconcls-settings {
+    background-position: 0 -228px;
+}
+
+
+/*logo menuhelp*/
+.center-content-menu a.parent .iconcls-menuhelp {
+    background: url('../Contents/icons/iconHelp.png') no-repeat center;
+}
+
+/*logo subscriber*/
+.center-content-menu a.parent .iconcls-subscriber {
+    background: url('../Contents/icons/icon-subscriber.png') no-repeat center;
+}
+
+/*logo fiveshop*/
+.center-content-menu a.parent .iconcls-fiveshop {
+    background: url('../Contents/icons/5food.png') no-repeat center;
+}
+
+/*mui ten di xuong*/
+.center-content-menu a.parent .default-down {
+    position: absolute;
+    background-image: url('../Contents/icons/iconMenu.png');
+    background-position: 0px -229px;
+    right: 20px;
+    bottom: 10px;
+    width: 24px;
+    height: 24px;
+    background-size: 24px;
+}
+
+
+/*link text menu item*/
+.nav-menu a.parent .link-text {
+    position: absolute;
+    width: 130px;
+    height: 26px;
+    left: 8px;
+    bottom: 3px;
+    text-align: left;
+    padding-left: 40px;
+    box-sizing: unset;
+}
+
+/*
+    Chỉnh sửa chi tiết giao diện cho các khối menu con
+    khi người dùng chọn danh mục tương ứng
+*/
+
+.center-content-menu .wrap-children {
+    position: absolute;
+    top: 0;
+    left: 230px;
+    width: 235px;
+    overflow-y: auto;
+    background-color: #2e55a5;
+    outline: none;
+    height: 100%;
+    z-index: 9999;
+}
+
+.wrap-children .cls-children {
+    border: none;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.cls-children li {
+    padding: 0;
+}
+
+.wrap-children li {
+    list-style: none;
+    width: 100%;
+    height: 32px;
+    background-color: #2e55a5;
+    line-height: 32px;
+}
+
+    .wrap-children li a {
+        display: inline-block;
+        height: 100%;
+        width: 213px;
+        margin-top: 4px;
+        text-decoration: none;
+        color: #b2d5e3;
+        padding: 2px 2px 2px 20px;
+    }
+
+    .wrap-children li:hover {
+        background-color: #07f;
+    }
+
+    .wrap-children li a:hover {
+        color: #fff;
+        background-color: #07f;
+    }
+
+#price::before {
+    content: "";
+    display: block;
+    pointer-events: fill;
+    cursor: default;
+    width: 90%;
+    height: 1px;
+    background-color: #0a7aa6;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*Các phần ul li có trong menu con*/
+.group ul {
+    padding: 20px;
+}
+
+.sub-ul-group {
+    width: 195px;
+    padding: 0;
+    margin: auto;
+}
+
+    .sub-ul-group li a {
+        width: 193px;
+    }
+
+    .sub-ul-group .sub-title {
+        width: 179px;
+        padding-left: 16px;
+        background-color: #004e6e !important;
+        height: 32px;
+        line-height: 32px;
+        text-transform: uppercase;
+        font-weight: 700;
+        cursor: default;
+        color: #fff;
+    }
+
+.dictionary-parent {
+    width: 230px !important;
+    overflow: hidden;
+}
+
+.wrap-children .cls-children .dictionary-float {
+    display: inline-table;
+    width: 195px;
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+.disable-option {
+    display: none;
+}

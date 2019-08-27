@@ -1,0 +1,225 @@
+﻿#dialog {
+    font: 300 13px Roboto !important;
+    color: rgb(33, 33, 33);
+}
+
+    #dialog.add-customer, #dialog.edit-customer {
+        height: 330px !important;
+        width: 100%!important;
+    }
+
+.contain.input-data {
+    height: calc(100% - 41px);
+    overflow: auto;
+}
+
+.row-2-input {
+    display: flex;
+    margin: 8px 0px;
+    height: 22px;
+}
+
+.title-input {
+    display: flex;
+    width: 317px;
+    height: 22px;
+    margin-right: 15px;
+}
+
+    .title-input .title {
+        width: 133px;
+        line-height: 22px;
+    }
+
+        .title-input .title span {
+            color: red;
+        }
+
+    .title-input .input {
+        width: 190px;
+        height: 22px;
+        display: flex;
+    }
+
+input {
+    vertical-align: middle;
+    width: 162px;
+    height: 15px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: 0.8px solid #c5c5c5;
+    margin-top: -2px;
+}
+
+
+.title-sub-contain {
+    width: 647px;
+    color: rgb(117, 117, 117);
+    text-transform: uppercase;
+    font: 600 17px Roboto !important;
+    padding: 10px 0px;
+}
+
+.row-3-input.title-input {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.row-3-input .input-address {
+    width: 525px;
+}
+
+    .row-3-input .input-address input {
+        width: 494px;
+        margin-left: -3px;
+    }
+
+select.address {
+    width: 170px;
+    border: 0.7px solid #c5c5c5;
+    border-radius: 3px;
+    padding: 5px 10px;
+    height: 32px;
+}
+
+.row-2-input .input-icon {
+    width: 24px;
+    height: 30px;
+    background-color: rgb(245, 245, 245) !important;
+    border: 1px solid rgb(195, 195, 195);
+    border-radius: 0px 3px 3px 0px !important;
+}
+
+.row-2-input .icon.add-new {
+    background: url('../../Contents/images/common-icon.png') no-repeat -26px -127px;
+    width: 16px;
+    height: 16px;
+    line-height: 32px;
+    margin: 7px 3px;
+}
+
+.input-datepicker {
+    border: none;
+    width: 140px;
+    margin-top: 1px;
+}
+
+.input.birthday {
+    border: 0.5px solid #d0d0d0;
+    border-radius: 3px;
+    height: 27px;
+    margin-top: -2px;
+    width: 183px;
+    margin-left: -3px;
+    display: flex;
+}
+
+.date-picker {
+    width: 20px;
+    height: 20px;
+    background: url('../Contents/icons/IconSprite.png') no-repeat;
+    background-position: 0px -620px;
+    background-size: 20px;
+    margin: 3px 0px;
+}
+
+/*Bottom dialog */
+.contain.button-data {
+    background-color: white;
+    display: flex;
+    width: 665px;
+    height: 40px;
+}
+
+    .contain.button-data .ct-btn:hover, .contain.button-data .ct-btn:focus {
+        border: 1px solid #0071c1;
+        background-image: -webkit-linear-gradient(top,#eff0ec,#e1f2e9);
+        outline: none;
+    }
+
+    .contain.button-data .dialog-bottom-left {
+        width: 30%;
+    }
+
+    .contain.button-data .dialog-bottom-right {
+        display: flex;
+        justify-content: flex-end;
+        width: 70%;
+    }
+
+    .contain.button-data button.toolbar-item {
+        display: flex;
+        background: white;
+        border: 1px solid #d0d0d0;
+        height: 25px;
+        margin-top: 10px;
+        margin-right: 10px;
+        padding: 0 7px;
+        cursor: pointer;
+    }
+
+    .contain.button-data .toolbar-item .icon {
+        width: 16px;
+        height: 16px;
+        background-size: 12px;
+        margin-right: 5px;
+        margin-top: 3px;
+    }
+
+    .contain.button-data button.toolbar-item:hover {
+        background-color: #f6f6f6;
+    }
+
+    .contain.button-data .toolbar-item span {
+        line-height: 25px;
+    }
+
+    .contain.button-data .toolbar-item .icon.help {
+        background: url('../Contents/icons/icon-question.png') no-repeat center;
+        border-radius: 8px;
+        background-size: 16px;
+    }
+
+    .contain.button-data .toolbar-item .icon.save {
+        background: url('../Contents/icons/Save16.png') no-repeat center;
+    }
+
+    .contain.button-data .toolbar-item .icon.save-add {
+        background: url('../Contents/icons/SaveAdd16.png') no-repeat center;
+    }
+
+    .contain.button-data .toolbar-item .icon.cancel {
+        background-position: 0px -1951px;
+        background-size: 16px;
+    }
+
+/*Validate*/
+.validate {
+    width: 77%;
+    border: 1px solid #cf4c35;
+}
+
+.error-input {
+    width: 24px;
+    background: url('../Contents/icons/exclamation.png') no-repeat center;
+}
+.validate-error {
+    border: 1px solid #d0d0d0;
+    padding: 3px 8px;
+    border-radius: 5px;
+    background-color: #b0d9f266;
+    top: 50px;
+    display: flex;
+    width: auto;
+    position: absolute;
+    right: 31px;
+    line-height: 20px;
+    visibility: hidden;
+}
+    .validate-error.error-right {
+        left: 330px;
+        width: 195px;
+        top: 43px;
+        line-height: 20px;
+    }
+

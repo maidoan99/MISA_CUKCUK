@@ -1,0 +1,137 @@
+﻿* {
+    font-family: 'Roboto',Tahoma,sans-serif !important;
+}
+
+.header {
+    height: 55px;
+    width: calc(100% - 232px);
+    position: absolute;
+    left: 230px;
+    top: 0;
+    background-color: #0d71af;
+    min-width: 700px;
+}
+
+/*HEADER LEFT*/
+.header-left {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 30%;
+}
+
+    .header-left .contain-over {
+        width: 170px;
+        height: 55px;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+        .header-left .contain-over .cbo-header {
+            left: 21px;
+            top: 11px;
+            height: 32px;
+            position: absolute;
+            width: 200px;
+            color: #fff;
+            text-align: right;
+            display: flex;
+            justify-content: flex-start;
+            text-align-last: center; /*can giua text cua select*/
+            cursor: pointer;
+            background-color: #0c417c;
+            border: 1px solid #0c417c;
+        }
+
+/*HEADER RIGHT*/
+.header-right {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+    .header-right .contain-over {
+        overflow-x: auto;
+        overflow-y: hidden;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .header-right .cbo-header {
+        height: 32px;
+        width: 170px;
+        padding: 7px;
+        border: 1px solid #03356d;
+        margin-top: 11px;
+        text-align-last: center; /*can giua text cua select*/
+        cursor: pointer;
+        background-color: #03356d;
+        color: white;
+    }
+
+    .header-right .user-panel {
+        height: 32px;
+        display: flex;
+        margin: 13px 13px;      
+        cursor: pointer;
+        font-size: 13px !important;
+    }
+
+        .header-right .user-panel span {
+            line-height: 32px;
+            color: #fff;
+            padding: 0px 3px;
+        }
+
+.arrow-down-black {
+    width: 20px;
+    color: #fff;
+    background: url('../Contents/icons/default-small-arrow.png') no-repeat;
+    margin-left: -10px;
+    margin-top: 22px;
+    color: #fff;
+}
+
+.header-right .img-user {
+    width: 28px;
+    height: 28px;
+    background-image: url('../Contents/icons/EmployeeImage.png');
+    background-color: #fff;
+    border-radius: 14px;
+    background-size: 28px;
+    line-height: 32px;
+    margin-right: 5px;
+}
+
+.header-right .icon {
+    width: 46px;
+    height: 100%;
+    cursor: pointer;
+    
+}
+
+.icon.question {
+    background: url('../Contents/icons/icon-question.png') no-repeat center;
+    background-size: 24px;
+}
+
+.icon.support {
+    width: 65px;
+    background: url('../Contents/icons/ic_support.svg') no-repeat center;
+    margin-left: -13px;
+}
+
+.icon.notification {
+    background: url('../../Contents/icons/notify-18.png') no-repeat center;
+    border-right: 0.1px solid #e1e1e1;
+}
+
+.icon.help {
+    background: url('../../Contents/icons/icon_help_18.png') no-repeat center;
+}

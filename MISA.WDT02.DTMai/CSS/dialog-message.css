@@ -1,0 +1,43 @@
+﻿.message-content {
+    width: 100%;
+    height: calc(100% - 30px);
+    display: flex;
+}
+
+    .message-content .icon.question {
+        width: 30px;
+        height: 30px;
+        background-size: 30px;
+        margin: 8px 0px;
+    }
+
+    .message-content .message {
+        width: calc(100% - 60px);
+        margin: 0 15px;
+        line-height: 24px;
+    }
+
+.button-content {
+    justify-content: flex-end;
+    display: flex;
+}
+
+    .button-content button {
+        margin: 0 3px;
+        background-color:white;
+        border: 1px solid #d0d0d0;
+    }
+
+.icon.warning {
+    width: 30px;
+    height: 30px;
+    background-size: 30px!important;
+    margin: 8px 0px;
+    background: url('../Contents/icons/exclamation.png') no-repeat center;
+}
+
+.button-content .ct-btn:hover {
+    border: 1px solid #0071c1;
+    background-image: -webkit-linear-gradient(top,#eff0ec,#e1f2e9);
+    outline: none;
+}
